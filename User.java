@@ -1,15 +1,16 @@
+package com.example.localloop;
+
 public class User {
-    public String firstName;
-    public String lastName;
-    public String email;
-    public String role;
+    protected String username;
+    protected String password;
+    protected String role;
 
-    public User() {} // Required by Firebase
-
-    public User(String firstName, String lastName, String email, String role) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+    public User(String username, String password, String role) {
+        this.username = username;
+        this.password = password;
         this.role = role;
     }
+
+    public String getUsername() { return username; }
+    public String getRole() { return role; }
 }
